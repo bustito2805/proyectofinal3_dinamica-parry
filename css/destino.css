@@ -1,0 +1,232 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+body .headerFlex {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+}
+body .headerFlex img {
+  width: 200px;
+}
+body .asideFlex h2 {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+body iframe {
+  border-radius: 35px;
+  border-color: rgb(61, 4, 61);
+}
+body input {
+  border-radius: 10px;
+  margin: 10px;
+}
+body .border {
+  border: solid 1px rgb(28, 68, 55);
+}
+body .espacios {
+  margin: 20px;
+}
+
+.textoJustificado {
+  text-align: justify;
+}
+
+h2 {
+  font-size: larger;
+}
+h2 h3 {
+  margin: 7px;
+}
+
+textarea {
+  width: 80%;
+  max-width: 100%;
+  height: 20vh;
+  border-radius: 10px;
+  position: relative;
+  margin: 6px;
+  padding: 10px;
+}
+
+/*TRANSICIONES*/
+.transicion {
+  transition: width 3s;
+}
+
+.transicion:hover {
+  width: 100%;
+}
+
+/*--PSEUDO CLASES*/
+/*selector:pseudoclase { propiedad: valor; } */
+a:hover {
+  font-weight: bold;
+  background-color: rgb(47, 47, 240);
+  color: white;
+  text-decoration: underline;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(153, 35, 35);
+}
+
+a:visited {
+  color: #113b0c;
+}
+
+a:active {
+  background-color: rgb(153, 153, 13);
+  color: black;
+}
+
+/*ANIMACIONES*/
+.tituloAnimado {
+  animation-name: titulo;
+  animation-duration: 8s;
+  animation-iteration-count: 3;
+}
+
+@keyframes titulo {
+  /*inicio*/
+  from {
+    transform: translateX(1300px);
+  }
+  /*FINAL*/
+  to {
+    transform: translate(0);
+  }
+}
+/*RESPONSIVE DESINGN*/
+/*Desktop*/
+@media (min-width: 1024px) {
+  P {
+    font-size: large;
+  }
+}
+/*Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  P {
+    font-size: medium;
+  }
+}
+/*Smartphone */
+@media (max-width: 480px) {
+  P {
+    font-size: small;
+  }
+}
+body {
+  width: 100%;
+}
+body header {
+  width: 100%;
+}
+body header h1 {
+  font-style: "Akshar", sans-serif;
+  font-size: 50px;
+}
+body nav {
+  width: 100%;
+}
+body nav div {
+  width: 100%;
+}
+body div {
+  width: 100%;
+}
+body div div {
+  width: 110%;
+}
+body aside {
+  width: 80%;
+}
+body footer {
+  width: 70%;
+}
+
+.card, .card-verde {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-verde {
+  background-color: aquamarine;
+}
+
+.caja-index {
+  color: red;
+  font-size: small;
+  font-style: italic;
+  justify-content: stretch;
+}
+
+.caja-blog {
+  color: blue;
+  font-size: large;
+  font-style: italic;
+  justify-content: stretch;
+}
+
+h1 {
+  color: rgb(156, 32, 32);
+}
+
+h2 {
+  color: rgb(3, 3, 3);
+}
+
+h3 {
+  color: rgb(7, 33, 150);
+}
+
+/*VARIABLES RESPNSIVE SCSS*/
+@media (min-width: 1024px) {
+  body {
+    background-color: rgb(79, 111, 218);
+  }
+  body {
+    background-color: rgb(79, 111, 218);
+    background-image: radial-gradient(315deg, #813867 0%, #ebebeb 74%);
+  }
+}
+/*Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  body {
+    background-color: rgb(173, 72, 212);
+  }
+  body {
+    background-color: rgb(173, 72, 212);
+    background-image: radial-gradient(#7e3d4a 0%, #db6885 74%);
+  }
+}
+/*Smartphone */
+@media (max-width: 480px) {
+  body {
+    background-color: rgb(52, 228, 90);
+  }
+  body {
+    background-color: rgb(52, 228, 90);
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */
